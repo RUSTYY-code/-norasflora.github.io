@@ -1,5 +1,5 @@
 Kenzie
-Jayson
+Djayson
 Ian
 
 User Story 1: Algemene lay-out
