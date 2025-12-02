@@ -1,8 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
+<<<<<<< Updated upstream
     font-family: Arial, sans-serif;
+=======
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: #f5f4ea;
+    color: #000000;
+>>>>>>> Stashed changes
 }
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 
 
 header {
@@ -14,7 +54,6 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-
 }
 
 .Logo {
@@ -23,29 +62,31 @@ header {
     padding: 0;
 }
 
-
 nav {
     background-color: #1a5023;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-ul {
+nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
     flex-direction: row;
     justify-content: center;
     gap: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .navText {
     color: white;
     text-decoration: none;
     font-size: 18px;
+<<<<<<< Updated upstream
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+=======
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+>>>>>>> Stashed changes
     display: inline-block;
     transition: color 0.3s, transform 0.3s;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -56,6 +97,7 @@ ul {
     transform: scale(1.1);
 }
 
+<<<<<<< Updated upstream
 footer {
     padding: 40px 20px;
     border-top: 1px solid #000;
@@ -89,4 +131,235 @@ footer {
 
 #background{
     width: 100%;
+=======
+
+
+.hero {
+    position: relative;
+    height: 420px;
+    background-image: url("images/hero-bloemen.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.4));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+}
+
+
+
+.tagline-bar {
+    background-color: #305f34;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 22px;
+}
+
+
+
+.highlights {
+    background-color: #f7f6e7;
+    padding: 40px 0 60px;
+}
+
+.flower-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+
+.flower-card {
+    width: 230px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.flower-card img {
+    height: 160px;
+    object-fit: cover;
+}
+
+.flower-info {
+    background-color: #e6f2c6;
+    padding: 12px 10px 16px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.flower-info .flower-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.flower-info .flower-price {
+    font-size: 13px;
+}
+
+
+
+.about-section {
+    background-color: #305f34;
+    color: white;
+    padding: 55px 0;
+}
+
+.about-inner {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.about-text {
+    flex: 2;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.about-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 8px;
+}
+
+.about-photo-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-photo-card {
+    background-color: #f7f6e7;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-photo-card img {
+    border-radius: 8px;
+}
+
+
+
+.footer-top {
+    background-color: #f5f4ea;
+    padding: 35px 0 40px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 14px;
+}
+
+.footer-block-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footer-contact p,
+.footer-hours p {
+    margin: 2px 0;
+}
+
+.footer-contact span.label {
+    display: inline-block;
+    width: 70px;
+    font-weight: 600;
+}
+
+/* Opening hours heading */
+.footer-hours-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+
+.footer-bottom {
+    background-color: #2f6d39;
+    color: #e6f2c6;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+
+
+@media (max-width: 900px) {
+    .about-inner {
+        flex-direction: column;
+    }
+
+    .about-photo-wrapper {
+        order: -1;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 650px) {
+    nav ul {
+        gap: 25px;
+        font-size: 16px;
+    }
+
+    .hero {
+        height: 320px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .flower-card {
+        width: 90%;
+        max-width: 280px;
+    }
+>>>>>>> Stashed changes
 }
