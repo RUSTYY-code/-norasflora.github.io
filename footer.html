@@ -11,19 +11,53 @@
       font-family: Arial, sans-serif;
     }
 
+    
+    .intro-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px;
+      padding: 60px 20px;
+      background-color: #4f684e;   
+      color: white;
+    }
+
+    .intro-text {
+      max-width: 600px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .intro-text h1 {
+      font-size: 32px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .photo-frame {
+      width: 260px;
+      height: 320px;
+      background-color: #f2f2f2;
+      border-radius: 12px;
+      border: 3px solid #e0e0e0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+   
     footer {
       padding: 40px 20px;
       border-top: 1px solid #000;
       display: flex;
       justify-content: center;
+      background-color: #f5f5f5;
     }
 
-    /* ⚡ GRID: perfecte uitlijning tegenover elkaar */
     .footer-container {
       display: grid;
-      grid-template-columns: 1fr 1fr; /* 2 gelijke kolommen */
+      grid-template-columns: 1fr 1fr;
       gap: 40px;
-      width: 600px; /* houdt alles super netjes */
+      width: 600px;
+      font-size: 16px;
     }
 
     .opening h2 {
@@ -41,20 +75,52 @@
     .contact p {
       margin: 4px 0;
     }
-  </style>
 
+  </style>
 </head>
 <body>
 
+ 
+  <section class="intro-container">
+
+    <div class="intro-text">
+      <h1>Welkom bij Nora’s Flora</h1>
+
+      <p>Bij Nora's Flora draait alles om de liefde voor bloemen
+      en het creëren van iets moois voor ieder moment.</p>
+
+      <p>Ik ben Nora, de trotse eigenaresse, en ik stel met veel zorg en 
+      passie elk boeket samen met oog voor kleur, vorm en seizoen.</p>
+
+      <p>Of je nu iemand wilt verrassen, een bruiloft plant of gewoon je dag wilt
+      opfleuren, bij Nora's Flora vind je altijd iets bijzonders. Elk boeket wordt
+      met de hand gemaakt en afgestemd op jouw wensen, met bloemen van lokale 
+      duurzame kwekers.</p>
+
+      <p>Met bloemen van Nora's Flora wordt elke dag een beetje vrolijker!</p>
+    </div>
+
+  
+    <div class="photo-frame"></div>
+
+  </section>
+
+
+  
   <footer>
     <div class="footer-container">
 
-      <!-- LINKER KOLOM -->
+      <div class="contact">
+        <p>Email&nbsp;&nbsp;&nbsp;: contact@noraflora.com</p>
+        <p>Telefoon : 06 12345678</p>
+        <p>Adres&nbsp;&nbsp;&nbsp;: Zwolle, pannenkoekendijk 420 B</p>
+      </div>
+
       <div class="opening">
         <h2>Openingstijden</h2>
 
         <div class="row">
-          <span>Ma–vr</span>
+          <span>Ma – Vr</span>
           <span>12:00 – 17:00</span>
         </div>
 
@@ -64,17 +130,15 @@
         </div>
       </div>
 
-      <!-- RECHTER KOLOM PRECIES ERTEGENOVER -->
-      <div class="contact">
-        <p>email&nbsp;&nbsp;&nbsp;&nbsp;: contact@noraflora.com</p>
-        <p>telefoon&nbsp;: 0612345678</p>
-        <p>adres&nbsp;&nbsp;&nbsp;&nbsp;: Zwolle Pannekoekendijk420B</p>
-      </div>
-
     </div>
   </footer>
 
 </body>
 </html>
+
+
+
+
+
 
 
