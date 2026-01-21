@@ -52,7 +52,7 @@ a {
 header {
     display: flex;
     flex-direction: row;
-    background-color: #2f6d39;
+    background-color: #3f593d;
     width: 100%;
     padding: 15px;
     justify-content: center;
@@ -68,7 +68,7 @@ header {
 
 
 nav {
-    background-color: #1a5023;
+    background-color: #283e24;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -109,47 +109,7 @@ nav ul {
 }
 
 
-.hero {
-    position: relative;
-    width: 100%;
-    min-height: 420px;
-    overflow: hidden;
-}
 
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.4));
-}
-
-.hero-content {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    padding: 0 20px;
-}
-
-.hero-title {
-    font-size: 38px;
-    margin-bottom: 10px;
-}
-
-.hero-subtitle {
-    font-size: 18px;
-}
 
 
 .section-bar {
@@ -379,7 +339,7 @@ nav ul {
 
 footer {
     padding: 40px 20px;
-    background-color: #1a5023;
+    background-color: #283e24;
     color: #ffffff;
     margin-top: 0;
 }
@@ -419,8 +379,28 @@ footer {
 }
 
 
+.hero {
+    position: relative;
+    width: 100%;
+}
+
 #background {
     width: 100%;
+    height: 600px; 
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: "Segoe UI", "Poppins", sans-serif;
+    font-size: larger;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 #header2 {
@@ -431,20 +411,20 @@ footer {
 }
 
 .home-blokken {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    gap: 25px;
+    padding: 25px 0;
+    justify-content: center; 
 }
 
 .blok {
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 225px;
   background-color: #d9edb5;
   text-align: center;
   border-radius: 15px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .blok img {
@@ -529,17 +509,7 @@ footer {
     font-weight: 500;
 }
 
-.welcome-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 80px 40px;
-    color: #ffffff;
-    font-family: "Segoe UI", "Poppins", sans-serif;
-}
+
 
 .welcome-text {
     max-width: 520px;
@@ -576,23 +546,23 @@ footer {
 
 .welcome-wrapper {
     display: flex;
+     background-color: #3f593d;
     align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-    max-width: 1100px;
-    margin: 0 auto;
+    justify-content: center; 
+    gap: 150px;               
     padding: 80px 40px;
+    margin: 0 auto;
     color: #ffffff;
     font-family: "Segoe UI", "Poppins", sans-serif;
 }
 
 .welcome-section {
-    background-color: #4f6b4f;
+    background-color: #3f593d;
 }
 
 
 .footer-info {
-    background-color: #3f573f;
+    background-color: #283e24;
     color: #ffffff;
     border-top: 1px solid rgba(255,255,255,0.08);
 }
@@ -622,7 +592,7 @@ footer {
 }
 
 .footer-info {
-    background-color: #3f573f;
+    background-color: #283e24;
     color: #ffffff;
     border-top: 1px solid rgba(255,255,255,0.08);
 }
