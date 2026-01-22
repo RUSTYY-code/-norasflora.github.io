@@ -342,7 +342,6 @@ footer {
     background-color: #283e24;
     color: #ffffff;
     margin-top: 0;
-    height: 0%;
 }
 
 .footer-container {
@@ -351,7 +350,6 @@ footer {
     gap: 40px;
     max-width: 900px;
     margin: 0 auto;
-    height: 0%;
 }
 
 
